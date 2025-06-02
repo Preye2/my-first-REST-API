@@ -104,4 +104,4 @@ PUT	/items/:id	Update item by ID	No
 DELETE	/items/:id	Delete item by ID	No
 
 
-[post implemetation]()
+[post implemetation](https://github.com/Preye2/my-first-REST-API/blob/main/Rest%20POST%20Implementation.jpg)
