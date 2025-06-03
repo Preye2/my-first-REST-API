@@ -158,7 +158,7 @@ npx jest --runInBand
 # Screenshots
 
 # Postman Collection
-
+![image alt](https://github.com/Preye2/my-first-REST-API/blob/b86e7c2878a41b6e968cc855a60a271a63cb4d5b/REST%20GET%20Item%20Implemetation.jpg)
 
 
 
