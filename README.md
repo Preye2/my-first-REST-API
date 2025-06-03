@@ -158,8 +158,21 @@ npx jest --runInBand
 # Screenshots
 
 # Postman Collection
-![image alt](https://github.com/Preye2/my-first-REST-API/blob/b86e7c2878a41b6e968cc855a60a271a63cb4d5b/REST%20GET%20Item%20Implemetation.jpg)
+![image post](https://github.com/Preye2/my-first-REST-API/blob/b86e7c2878a41b6e968cc855a60a271a63cb4d5b/REST%20GET%20Item%20Implemetation.jpg)
 [post implemetation](https://github.com/Preye2/my-first-REST-API/blob/main/Rest%20POST%20Implementation.jpg)
+
+![image get](https://github.com/Preye2/my-first-REST-API/blob/a6e8393340013fea4d1802253bb866765d6fc9fc/REST%20GET%20Item%20Implemetation.jpg)
+[get item](https://github.com/Preye2/my-first-REST-API/blob/main/REST%20GET%20Item%20Implemetation.jpg)
+
+![image get by id](https://github.com/Preye2/my-first-REST-API/blob/a6e8393340013fea4d1802253bb866765d6fc9fc/REST%20GET%3B%20id.jpg)
+[get by id](https://github.com/Preye2/my-first-REST-API/blob/main/REST%20GET%3B%20id.jpg)
+	
+![image put new id](https://github.com/Preye2/my-first-REST-API/blob/a6e8393340013fea4d1802253bb866765d6fc9fc/REST%20PUT%20new%20id.jpg)
+[put new](https://github.com/Preye2/my-first-REST-API/blob/main/REST%20PUT%20new%20id.jpg)
+
+![image delet outcome](https://github.com/Preye2/my-first-REST-API/blob/a6e8393340013fea4d1802253bb866765d6fc9fc/REST%20DELETE%20Result.jpg)
+[delete result](https://github.com/Preye2/my-first-REST-API/blob/main/REST%20DELETE%20Result.jpg)
+
 
 
 
