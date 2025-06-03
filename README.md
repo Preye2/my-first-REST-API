@@ -124,6 +124,43 @@ Content-Type: application/json
   "description": "string (10-255 chars)"
 }
 
+# Troubleshooting
+
+## Common Issues
+### Validation Errors:
+
+- Ensure requests include all required fields
+
+- Verify field lengths meet requirements
+
+- Check Content-Type header is application/json
+
+### Server Not Starting:
+
+## Check for port conflicts
+lsof -i :3000
+
+## Verify dependencies installed
+npm install
+
+## Check environment variables
+cat .env
+
+### Test Failures:
+
+# Clear Jest cache
+npx jest --clearCache
+
+# Run tests sequentially
+npx jest --runInBand
+
+
+# Screenshots
+
+# Postman Collection
+
+
+
 
 
 # Project Structure
