@@ -95,13 +95,65 @@ LOG_LEVEL=info
 
 # Endpoints
 
-  Method	Endpoint	Description	Auth Required
-GET	/	API status check	No
-GET	/items	Get all items	No
-GET	/items/:id	Get single item by ID	No
-POST	/items	Create new item	No
-PUT	/items/:id	Update item by ID	No
-DELETE	/items/:id	Delete item by ID	No
+| Method   | Endpoint         | Parameters                 | Description                  | Auth Required |
+|----------|------------------|---------------------------|------------------------------|--------------|
+| `GET`    | `/`              | -                         | API status check             | No           |
+| `GET`    | `/items`         | -                         | Get all items                | No           |
+| `GET`    | `/items/:id`     | `id` (path parameter)     | Get single item by ID        | No           |
+| `POST`   | `/items`         | JSON body                 | Create new item              | No           |
+| `PUT`    | `/items/:id`     | `id` + JSON body          | Update item by ID            | No           |
+| `DELETE` | `/items/:id`     | `id` (path parameter)     | Delete item by ID            | No           |
 
+# Example Usage:
+
+GET /items/1 HTTP/1.1
+Host: localhost:3000
+
+POST /items HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "New Item",
+  "description": "Item description"
+}
+
+# Request Body (POST/PUT):
+
+{
+  "name": "string (3-50 chars)",
+  "description": "string (10-255 chars)"
+}
+
+
+
+# Project Structure
+
+
+| Directory Structure              | Type      | Description                  |
+|----------------------------------|-----------|------------------------------|
+| **express-rest-api/**            | Directory | Project root                 |
+| ├── **src/**                     | Directory | Source code                  |
+| │   ├── `app.js`                 | File      | Express app configuration    |
+| │   ├── `server.js`              | File      | Server entry point           |
+| │   ├── **controllers/**         | Directory | Route controllers            |
+| │   │   └── `items.controller.js`| File      | Items controller             |
+| │   ├── **routes/**              | Directory | Route definitions            |
+| │   │   └── `items.routes.js`    | File      | Items routes                 |
+| │   ├── **models/**              | Directory | Data models                  |
+| │   │   └── `item.model.js`      | File      | Item data model              |
+| │   ├── **services/**            | Directory | Business services            |
+| │   │   └── `items.service.js`   | File      | Items service                |
+| │   ├── **middlewares/**         | Directory | Custom middleware            |
+| │   │   ├── `errorHandler.js`    | File      | Error handling middleware    |
+| │   │   └── `validateRequest.js` | File      | Validation middleware        |
+| │   └── **utils/**               | Directory | Utilities                    |
+| │       ├── `appError.js`        | File      | Custom error class           |
+| │       └── `logger.js`          | File      | Logging utility              |
+| ├── **test/**                    | Directory | Test suites                  |
+| │   └── `items.test.js`          | File      | Items endpoint tests         |
+| ├── `.env`                       | File      | Environment variables        |
+| ├── `.gitignore`                 | File      | Git ignore rules             |
+| ├── `package.json`               | File      | Project metadata             |
+| └── `README.md`                  | File      | Project documentation        |
 
 [post implemetation](https://github.com/Preye2/my-first-REST-API/blob/main/Rest%20POST%20Implementation.jpg)
